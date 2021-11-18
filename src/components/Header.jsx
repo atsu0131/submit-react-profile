@@ -9,11 +9,13 @@ export const Header = () => {
         <ProfImage></ProfImage>
         <ProfDesc>
             <table>
-                <ProfTr>aaa</ProfTr>
+                <ProfTr>
+                  <ProfTd>aaa</ProfTd>
+                  <ProfTd>ccc</ProfTd>
+                </ProfTr>
                 <ProfTr>bbb</ProfTr>
             <tr>
-                <li>デザイン、コーディング、UI/UXなど、WEB周辺の業務に20年。コーディング大好き。
-現在、サービスベンダー・ベンチャーにて、自立分散協調型のデザインチームと、デザイン文化醸成にチャレンジ中。</li>
+                <li></li>
             </tr>
             <tr>
                 <li>名前</li>
@@ -70,3 +72,9 @@ const ProfTr = styled.tr`
 background-color: blue;
 width: 28%;
 `;
+
+const ProfTd = styled.td`
+background-color: red;
+width: 10%;
+`;
+
