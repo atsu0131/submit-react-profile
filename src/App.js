@@ -13,9 +13,7 @@ import "./Normalize.css"
 function App() {
   return (
     <div className="App">
-      <header className="l-header">
       <Header />
-      </header>
       <Work />
       <Career />
       <Skill />

@@ -10,9 +10,24 @@ export const Work = () => {
         <Title>WORKS</Title>
         <TitleDes>制作実績など</TitleDes>
         <ImgRow>
+            <LayWork>
             <img src={Img2} alt=""/>
+            <MiddleTitle>Musubu LP</MiddleTitle>
+            <MiddleDisc>Coding / Gatsby</MiddleDisc>
+            <Direction>aaaa</Direction>
+            </LayWork>
+            <LayWork>
             <img src={Img3} alt=""/>
+            <MiddleTitle>Musubu LP</MiddleTitle>
+            <MiddleDisc>Coding / Gatsby</MiddleDisc>
+            <Direction>aaaa</Direction>
+            </LayWork>
+            <LayWork>
             <img src={Img4} alt=""/>
+            <MiddleTitle>Musubu LP</MiddleTitle>
+            <MiddleDisc>Coding / Gatsby</MiddleDisc>
+            <Direction>aaaa</Direction>
+            </LayWork>
         </ImgRow>
 
         </>
@@ -29,6 +44,22 @@ const TitleDes = styled.div`
     width: 100%;
     text-align:center;
     /* height: 50px */
+`;
+
+const LayWork = styled.div`
+text-align:center;
+`;
+
+const MiddleDisc = styled.div`
+
+`;
+
+const MiddleTitle = styled.div`
+
+`;
+
+const Direction = styled.div`
+
 `;
 
 const ImgRow = styled.div`
