@@ -4,10 +4,10 @@ import img from '../img/bg.png';
 import profileImg from '../img/title.png';
 import "../Normalize.css"
 
-let aa: any = "aa";
-console.log(aa);
 
-const keyColor = 'white';
+let name: string = "ATSUSHI ISAI"
+
+const keyColor: string = 'white';
 
 
 export const Header = () => {
@@ -18,19 +18,20 @@ export const Header = () => {
         <LayProfImage>
           <LayProfImageInline>
           <ProfImage></ProfImage>
-          <ProfImageName>ATSUSHI ISAI</ProfImageName>
-          <ProfImageCarrer>Front Eengineer</ProfImageCarrer>
+          <ProfImageName>{name}</ProfImageName>
+          <ProfImageCarrer>Front Engineer</ProfImageCarrer>
           </LayProfImageInline>
+          <ProfLine></ProfLine>
         </LayProfImage>
         <ProfDesc>
             <Table>
             <tbody>
                 <ProfTr>
-                <ProfTdAll colSpan={2}>デザイン、コーディング、UI/UXなど、WEB周辺の業務に20年。コーディング大好き。
-現在、サービスベンダー・ベンチャーにて、自立分散協調型のデザインチームと、デザイン文化醸成にチャレンジ中。</ProfTdAll>
+                <ProfTdAll colSpan={2}>バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの
+                収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。</ProfTdAll>
                 </ProfTr>
                 <ProfTr>
-                  <ProfTdAll2 colSpan={2}>isai ATSUSHI</ProfTdAll2>
+                  <ProfTdAll2 colSpan={2}>ISAI ATSUSHI</ProfTdAll2>
                 </ProfTr>
                 <ProfTr2>
                   <ProfTdName>性別</ProfTdName>
@@ -68,6 +69,16 @@ const Line = styled.div`
   width:60%;
 `;
 
+const ProfLine = styled.div`
+  background-color:white;
+  position: absolute;
+  top: 170px;
+  left: 10%;
+  height:1px;
+  width:32%;
+  z-index: -10;
+`;
+
 const BackImage = styled.div`
 background-image: url(${img});
   width: 100%;
@@ -77,6 +88,7 @@ background-image: url(${img});
   align-items: center;
   position: relative;
   font-family: "Roboto";
+  z-index: -10;
 `;
 
 const Prof = styled.div`
@@ -111,16 +123,16 @@ const ProfImageCarrer = styled.div`
 `;
 
 const ProfImage = styled.div`
-background-image: url(${profileImg});
-width: 128px;
-height: 128px;
-border-radius: 50%;
+  background-image: url(${profileImg});
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  z-index:200;
 `;
 
 const ProfDesc = styled.div`
-width: 68%;
-height: 276px;
-
+  width: 68%;
+  height: 276px;
 `;
 
 const ProfTr = styled.tr`
@@ -128,27 +140,24 @@ width: 100%;
 `;
 
 const ProfTr2 = styled.tr`
-line-height: 5px;
-width: 100%;
+  line-height: 15px;
+  width: 100%;
 `;
 
 const ProfTd = styled.td`
-
-width: 50%;
-height: 50px;
-color: ${keyColor};
+  width: 50%;
+  height: 50px;
+  color: ${keyColor};
 `;
 const ProfTd2 = styled.td`
-
-width: 50%;
-height: 50px;
-color: ${keyColor};
+  width: 50%;
+  height: 50px;
+  color: ${keyColor};
 `;
 
 const ProfTdName = styled.td`
-
-width: 20%;
-color: ${keyColor};
+  width: 20%;
+  color: ${keyColor};
 `;
 
 const ProfTdName2 = styled.td`
@@ -158,7 +167,7 @@ color: ${keyColor};
 
 const Table = styled.table`
 width: 100%;
-height: 276px;
+height: 250px;
 `;
 
 const ProfTdAll = styled.td`

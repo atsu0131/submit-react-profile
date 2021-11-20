@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import img from '../img/Vector.png';
+import Img1 from '../img/bike.png';
+import Img2 from '../img/study.png';
+import Img3 from '../img/iot.png';
+import Img4 from '../img/Vector.png';
 
 export const Activity = () => {
     return (
@@ -9,19 +12,51 @@ export const Activity = () => {
         <TitleDes>活動</TitleDes>
         </Section1>
         <Section>
+            <Content>
+                <Title>BLOG</Title>
+                <BlogWrap>
+                <Dl>
+                    <Dt>2019.09.21</Dt>
+                    <Dd>Google Developer Group ミートアップ in 京都</Dd>
+                </Dl>
+                <Dl>
+                    <Dt>2019.09.16</Dt>
+                    <Dd>久しぶりに自転車に乗った</Dd>
+                </Dl>
+                <Dl>
+                    <Dt>2019.02.20</Dt>
+                    <Dd>Raspbery Pi でスマートホームハブを構築：Hass.io</Dd>
+                </Dl>
+                <Dl>
+                    <Dt>2019.01.01</Dt>
+                    <Dd>新年のご挨拶 と 新天地</Dd>
+                </Dl>
+                </BlogWrap>
+            </Content>
 
-        <Content>
-            <Title>SKILL</Title>
-
-
-        </Content>
-
-        <Content>
-            <Title>SKILL</Title>
-
-
-        </Content>
-
+            <Content>
+                <Title>INTERREST</Title>
+                <ImgRow>
+                <LayInterest>
+                    <img src={Img1} alt=""/>
+                    <LayInterestTitle>自転車</LayInterestTitle>
+                    <LayInterestDesc>MTB</LayInterestDesc>
+                </LayInterest>
+                <LayInterest>
+                    <img src={Img2} alt=""/>
+                    <LayInterestTitle>勉強会</LayInterestTitle>
+                    <LayInterestDesc>GAS</LayInterestDesc>
+                    <LayInterestDesc>GDG Kyoto</LayInterestDesc>
+                </LayInterest>
+                <LayInterest>
+                    <img src={Img3} alt=""/>
+                    <LayInterestTitle>IoT</LayInterestTitle>
+                    <LayInterestDesc>VUI</LayInterestDesc>
+                    <LayInterestDesc>Google Home</LayInterestDesc>
+                    <LayInterestDesc>Raspberry Pi</LayInterestDesc>
+                </LayInterest>
+                </ImgRow>
+            </Content>
         </Section>
         </>
     );
@@ -32,12 +67,48 @@ const Section = styled.section`
 
 `;
 
+const BlogWrap = styled.div`
+    margin: 0 10%;
+`;
+
+const LayInterest = styled.div`
+    margin: 0 15px;
+`;
+
+const LayInterestTitle = styled.div`
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+`;
+
+const LayInterestDesc = styled.div`
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+`;
+
+const Dl = styled.dl`
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+const Dt = styled.dt`
+    font-weight: 500;
+`;
+
+const Dd = styled.dd`
+    font-weight: 700;
+    color:#EF75BE;
+`;
+
 const Content = styled.div`
 width:50%;
 `;
 
 const Section1 = styled.div`
-width:100%;
+        width:100%;
 `;
 
 const BigTitle = styled.h1`
@@ -53,8 +124,10 @@ const TitleDes = styled.div`
 `;
 
 const ImgRow = styled.div`
+    margin-top: 20px;
     display:flex;
-    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 86px;
 `;
 
 const Title = styled.h3`
@@ -63,7 +136,7 @@ const Title = styled.h3`
     display: inline-block;
 
     &::before{
-        content: url(${img});
+        content: url(${Img4});
         vertical-align: middle;
         padding-right: 10px;
         margin-left: 30px;
@@ -80,3 +153,4 @@ const Title = styled.h3`
         left:50px;
     };
 `;
+
