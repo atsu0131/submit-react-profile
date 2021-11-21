@@ -108,7 +108,8 @@ width:50%;
 `;
 
 const Section1 = styled.div`
-        width:100%;
+    margin-top: 122px;
+    width:100%;
 `;
 
 const BigTitle = styled.h1`
@@ -120,6 +121,7 @@ const BigTitle = styled.h1`
 const TitleDes = styled.div`
     width: 100%;
     text-align:center;
+    margin-bottom: 50px;
     /* height: 50px */
 `;
 

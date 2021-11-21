@@ -25,37 +25,36 @@ export const Header = () => {
         </LayProfImage>
         <ProfDesc>
             <Table>
-            <tbody>
-                <ProfTr>
-                <ProfTdAll colSpan={2}>バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの
-                収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。</ProfTdAll>
-                </ProfTr>
-                <ProfTr>
-                  <ProfTdAll2 colSpan={2}>ISAI ATSUSHI</ProfTdAll2>
-                </ProfTr>
-                <ProfTr2>
-                  <ProfTdName>性別</ProfTdName>
-                  <ProfTdName2>男性</ProfTdName2>
-                </ProfTr2>
-                <ProfTr2>
-                  <ProfTdName>生年月日</ProfTdName>
-                  <ProfTdName2>1990/4/4</ProfTdName2>
-                </ProfTr2>
-                <ProfTr2>
-                  <ProfTdName>
-                    現住所
-                  </ProfTdName>
-                  <ProfTdName2>
-                    埼玉県和光市
-                  </ProfTdName2>
-                </ProfTr2>
-            </tbody>
+              <tbody>
+                  <ProfTr>
+                  <ProfTdAll colSpan={2}>バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの
+                  収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。</ProfTdAll>
+                  </ProfTr>
+                  <ProfTr>
+                    <ProfTdAll2 colSpan={2}>ISAI ATSUSHI</ProfTdAll2>
+                  </ProfTr>
+                  <ProfTr2>
+                    <ProfTdName>性別</ProfTdName>
+                    <ProfTdName2>男性</ProfTdName2>
+                  </ProfTr2>
+                  <ProfTr2>
+                    <ProfTdName>生年月日</ProfTdName>
+                    <ProfTdName2>1990/4/4</ProfTdName2>
+                  </ProfTr2>
+                  <ProfTr2>
+                    <ProfTdName>
+                      現住所
+                    </ProfTdName>
+                    <ProfTdName2>
+                      埼玉県和光市
+                    </ProfTdName2>
+                  </ProfTr2>
+              </tbody>
             </Table>
         </ProfDesc>
       </Prof>
       <Line></Line>
     </BackImage>
-    
     </>
   );
 };
@@ -136,7 +135,7 @@ const ProfDesc = styled.div`
 `;
 
 const ProfTr = styled.tr`
-width: 100%;
+  width: 100%;
 `;
 
 const ProfTr2 = styled.tr`
@@ -161,22 +160,21 @@ const ProfTdName = styled.td`
 `;
 
 const ProfTdName2 = styled.td`
-
-color: ${keyColor};
+  color: ${keyColor};
 `;
 
 const Table = styled.table`
-width: 100%;
-height: 250px;
+  width: 100%;
+  height: 250px;
 `;
 
 const ProfTdAll = styled.td`
-vertical-align: top;
-width: 100%;
-color: ${keyColor};
+  vertical-align: top;
+  width: 100%;
+  color: ${keyColor};
 `;
 
 const ProfTdAll2 = styled.td`
-width: 100%;
-color: ${keyColor};
+  width: 100%;
+  color: ${keyColor};
 `;

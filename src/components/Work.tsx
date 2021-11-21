@@ -12,12 +12,12 @@ export const Work = () => {
         <TitleDes>制作実績など</TitleDes>
         <ImgRow>
             <LayWork>
-            <Link to="/work">
+            <a href="/work">
                 <img src={Img2} alt=""/>
                 <MiddleTitle>Musubu LP</MiddleTitle>
                 <MiddleDisc>Coding / Gatsby</MiddleDisc>
                 <Direction></Direction>
-            </Link>
+            </a>
             </LayWork>
             <LayWork>
                 <img src={Img3} alt=""/>
@@ -41,6 +41,7 @@ const Title = styled.h1`
     width: 100%;
     text-align:center;
     /* height: 50px */
+    margin-top: 122px;
 `;
 
 const TitleDes = styled.div`
@@ -60,7 +61,7 @@ const MiddleDisc = styled.div`
 `;
 
 const MiddleTitle = styled.div`
-    margin-top: 10px;
+    margin-top: 25px;
     font-weight: 700;
 `;
 

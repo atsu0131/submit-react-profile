@@ -32,80 +32,92 @@ export const Skill = () => {
         <>
         <Section>
             <Content>
-            <Title>SKILL</Title>
-            <LaySkill>
-            <Table>
-                <tbody>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                <Tr>
-                    <Td>Javascript</Td>
-                    <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                    <Td2>ES6, TypeScript </Td2>
-                </Tr>
-                </tbody>
-            </Table>
-            </LaySkill>
+                <Title>SKILL</Title>
+                <LaySkill>
+                    <Table>
+                        <tbody>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        <Tr>
+                            <Td>Javascript</Td>
+                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
+                            <Td2>ES6, TypeScript </Td2>
+                        </Tr>
+                        </tbody>
+                    </Table>
+                </LaySkill>
             </Content>
             <Content>
-            <Title>PERSONAL QUALITIES</Title>
-            <div>技術的好奇心が旺盛で「とにかくやってみる」が身上。</div>
-            <Flex>
-            <PieChart></PieChart>
-            <BarGraph></BarGraph>
-            </Flex>
-            
-
-
+                <Title>PERSONAL QUALITIES</Title>
+                <Text>技術的好奇心が旺盛で「とにかくやってみる」が身上。</Text>
+                <Flex>
+                    <PieChart></PieChart>
+                    <BarGraph></BarGraph>
+                </Flex>
             </Content>
 
         </Section>
         </>
     );
 };
+
+const Text = styled.div`
+margin-top: 20px;
+margin-left: 60px;
+position: relative;
+&::after {
+    content: '●';
+    position: absolute;
+    left: -28px;
+    top: 0;
+    font-size: 10px;
+    color: #C4C4C4;
+    }
+`;
+
 
 const LaySkill = styled.div`
     width: 100%;
