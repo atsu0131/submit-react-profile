@@ -2,26 +2,26 @@ import styled from 'styled-components';
 import Img1 from '../img/image7.png';
 import Img2 from '../img/image8.png';
 import Img3 from '../img/image1.png';
-import Img4 from '../img/image4.png';
+// import Img4 from '../img/image4.png';
 import Img6 from '../img/image6.png';
-import img from '../img/Vector.png';
+// import img from '../img/Vector.png';
 import { useEffect } from "react";
 import { Link , useLocation } from "react-router-dom";
 
 export default function ScrollToTop() {
-  const { pathname } = useLocation();
+    const { pathname } = useLocation();
 
-  useEffect(() => {
+    useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+    }, [pathname]);
 
-  return null;
+    return null;
 }
 
 export const Work2 = () => {
     return (
         <>
-        <Header>
+        <Header id="top">
             <Link to="/">
                 <Direction></Direction>
             </Link>
@@ -139,9 +139,9 @@ const LayFooter = styled.section`
     width:100%;
 `;
 
-const Img = styled.img`
-    margin: 15px;
-`;
+// const Img = styled.img`
+//     margin: 15px;
+// `;
 
 const LayWork = styled.div`
     margin: 0 30px;

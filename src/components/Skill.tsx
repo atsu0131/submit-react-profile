@@ -27,12 +27,12 @@ const tasks: MyObj[] = [
 ];
 
 
-  const Tasks = ({ tasks }: {tasks: any}) => {
-    const list = tasks.map((task: any) => {
+  const Tasks = ({ tasks }: {tasks: any}, index: any) => {
+    const list = tasks.map((task: any, index: any) => {
         switch(task.dot){
             case 1:
             return (
-                <Tr>
+                <Tr key={index}>
                 <Td>{task.title}</Td>
                 <Td2><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot></Td2>
                 <Td3>{task.des}</Td3>
@@ -42,7 +42,7 @@ const tasks: MyObj[] = [
         switch(task.dot){
             case 2:
             return (
-                <Tr>
+                <Tr key={index}>
                 <Td>{task.title}</Td>
                 <Td2><Dot2></Dot2></Td2>
                 <Td3>{task.des}</Td3>
@@ -52,7 +52,7 @@ const tasks: MyObj[] = [
         switch(task.dot){
             case 3:
             return (
-                <Tr>
+                <Tr key={index}>
                 <Td>{task.title}</Td>
                 <Td2><Dot3></Dot3></Td2>
                 <Td3>{task.des}</Td3>
@@ -62,7 +62,7 @@ const tasks: MyObj[] = [
         switch(task.dot){
             case 4:
             return (
-                <Tr>
+                <Tr key={index}>
                 <Td>{task.title}</Td>
                 <Td2><Dot4></Dot4></Td2>
                 <Td3>{task.des}</Td3>
@@ -72,7 +72,7 @@ const tasks: MyObj[] = [
         switch(task.dot){
             case 5:
             return (
-                <Tr>
+                <Tr key={index}>
                 <Td>{task.title}</Td>
                 <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot></Td2>
                 <Td3>{task.des}</Td3>
@@ -81,7 +81,7 @@ const tasks: MyObj[] = [
         }
 
     });
-    return <tbody>{list}</tbody>
+    return <tbody key={index}>{list}</tbody>
   };
 
 export const Skill = () => {
@@ -191,11 +191,11 @@ const Content = styled.div`
     width:50%;
 `;
 
-const CareerTitle = styled.div`
-    font-size:16px;
-    font-weight: 700;
-    line-height:21px;
-`;
+// const CareerTitle = styled.div`
+//     font-size:16px;
+//     font-weight: 700;
+//     line-height:21px;
+// `;
 
 const Title = styled.h3`
     color:#0097A7;

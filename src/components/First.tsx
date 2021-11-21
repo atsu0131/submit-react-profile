@@ -5,7 +5,9 @@ import { Career } from "./Career";
 import { Skill } from "./Skill";
 import { Activity } from "./Activity";
 import { IconFooter } from "./IconFooter";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link as Scroll } from 'react-scroll';
+
 
 export const First = () => {
     return (
@@ -16,11 +18,11 @@ export const First = () => {
             <Skill />
             <Activity />
             <IconFooter />
-            <a href="#">
+            <Scroll to="top" smooth={true} duration={600}>
                 <Circle>
                     <TopDirection></TopDirection>
                 </Circle>
-            </a>
+            </Scroll>
 
         </>
     );
@@ -41,12 +43,13 @@ const TopDirection = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #EF75BE;
-  position: relative;
-  position: fixed;
-  bottom: 25px;
-  right: 20px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #EF75BE;
+    position: relative;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
 `;

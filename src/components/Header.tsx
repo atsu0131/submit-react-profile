@@ -13,7 +13,7 @@ const keyColor: string = 'white';
 export const Header = () => {
   return (
     <>
-    <BackImage>
+    <BackImage　id="top">
       <Prof>
         <LayProfImage>
           <LayProfImageInline>
@@ -144,16 +144,16 @@ const ProfTr2 = styled.tr`
   width: 100%;
 `;
 
-const ProfTd = styled.td`
-  width: 50%;
-  height: 50px;
-  color: ${keyColor};
-`;
-const ProfTd2 = styled.td`
-  width: 50%;
-  height: 50px;
-  color: ${keyColor};
-`;
+// const ProfTd = styled.td`
+//   width: 50%;
+//   height: 50px;
+//   color: ${keyColor};
+// `;
+// const ProfTd2 = styled.td`
+//   width: 50%;
+//   height: 50px;
+//   color: ${keyColor};
+// `;
 
 const ProfTdName = styled.td`
   width: 20%;

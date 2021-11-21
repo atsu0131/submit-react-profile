@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Img1 from '../img/bike.png';
 import Img2 from '../img/study.png';
 import Img3 from '../img/iot.png';
-import Img4 from '../img/Vector.png';
 import Img5 from '../img/blog.png';
 import Img6 from '../img/interest.png';
 

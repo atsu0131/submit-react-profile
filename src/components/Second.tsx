@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import { Work2 } from "./Work2";
+import { Link as Scroll } from 'react-scroll';
 
 export const Second = () => {
     return (
         <>
             <Work2 />
-            <a href="#">
+            <Scroll to="top" smooth={true} duration={600}>
                 <Circle>
                 <TopDirection></TopDirection>
                 </Circle>
-            </a>
+            </Scroll>
         </>
     );
 };
@@ -29,6 +30,7 @@ const TopDirection = styled.div`
 `;
 
 const Circle = styled.div`
+    cursor: pointer;
     width: 64px;
     height: 64px;
     border-radius: 50%;
