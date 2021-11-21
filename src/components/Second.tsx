@@ -29,12 +29,12 @@ const TopDirection = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #EF75BE;
-  position: relative;
-  position: fixed;
-  bottom: 25px;
-  right: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #EF75BE;
+    position: relative;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
 `;

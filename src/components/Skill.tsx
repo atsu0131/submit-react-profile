@@ -23,13 +23,8 @@ const tasks: MyObj[] = [
     { id: 7, title: "React + Redux", dot: 3, des: "Styled-component, Storybook"},
     { id: 8, title: "CakePHP", dot: 2, des: ""},
     { id: 9, title: "WordPress", dot: 3, des: "テーマ・プラグイン開発など"},
-    { id: 9, title: "Action Script", dot: 1, des: "数多くの実績を積みました"},
+    { id: 9, title: "Action Script", dot: 4, des: "数多くの実績を積みました"},
 ];
-
-
-
-
-
 
 
   const Tasks = ({ tasks }: {tasks: any}) => {
@@ -97,9 +92,7 @@ export const Skill = () => {
                 <Title>SKILL</Title>
                 <LaySkill>
                     <Table>
-
-                            <Tasks tasks={tasks}></Tasks>
-
+                        <Tasks tasks={tasks}></Tasks>
                     </Table>
                 </LaySkill>
             </Content>
@@ -148,35 +141,35 @@ const Tr = styled.tr`
 `;
 
 const Td = styled.td`
-font-weight: 700;
-width: 5%;
+    font-weight: 700;
+    width: 5%;
 `;
 
 const Td2 = styled.td`
-width: 5%;
+    width: 5%;
 `;
 
 const Td3 = styled.td`
-width: 10%;
+    width: 10%;
 `;
 
 
 const SkillDot = styled.div`
-display: inline-block;
-width: 8px;
-height: 8px;
-border-radius: 50%;
-margin-right: 6px;
-background-color: #00A1AB;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #00A1AB;
 `;
 
 const SkillDotNot = styled.div`
-display: inline-block;
-width: 8px;
-height: 8px;
-border-radius: 50%;
-margin-right: 6px;
-background-color: #C4C4C4;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #C4C4C4;
 `;
 
 

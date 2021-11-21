@@ -127,6 +127,7 @@ const ProfImage = styled.div`
   height: 128px;
   border-radius: 50%;
   z-index:200;
+  background-size: cover;
 `;
 
 const ProfDesc = styled.div`

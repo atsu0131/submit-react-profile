@@ -3,6 +3,8 @@ import Img1 from '../img/bike.png';
 import Img2 from '../img/study.png';
 import Img3 from '../img/iot.png';
 import Img4 from '../img/Vector.png';
+import Img5 from '../img/blog.png';
+import Img6 from '../img/interest.png';
 
 export const Activity = () => {
     return (
@@ -35,7 +37,7 @@ export const Activity = () => {
             </Content>
 
             <Content>
-                <Title>INTERREST</Title>
+                <Title2>INTERREST</Title2>
                 <ImgRow>
                 <LayInterest>
                     <img src={Img1} alt=""/>
@@ -138,7 +140,32 @@ const Title = styled.h3`
     display: inline-block;
 
     &::before{
-        content: url(${Img4});
+        content: url(${Img5});
+        vertical-align: middle;
+        padding-right: 10px;
+        margin-left: 30px;
+    }
+    &::after {
+        content:"";
+        display:block;
+        width:520px;
+        height:3px;
+        background-color: #C4C4C4;
+        font-size: 16px;
+        position:absolute;
+        bottom:-10px;
+        left:50px;
+    };
+`;
+
+
+const Title2 = styled.h3`
+    color:#0097A7;
+    position:relative;
+    display: inline-block;
+
+    &::before{
+        content: url(${Img6});
         vertical-align: middle;
         padding-right: 10px;
         margin-left: 30px;
