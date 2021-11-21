@@ -2,29 +2,91 @@ import styled from 'styled-components';
 import img from '../img/Vector.png';
 import {BarGraph} from './BarGraph';
 import {PieChart} from './PieChart';
+import {Dot3} from './Dot3';
+import {Dot4} from './Dot4';
+import {Dot2} from './Dot2';
 
 interface MyObj {
     id: number;
     title: string;
+    dot: number;
+    des: string;
 }
 
 const tasks: MyObj[] = [
-    { id: 1, title: "one" },
-    { id: 2, title: "two" },
-    { id: 3, title: "three" },
-    { id: 4, title: "four" },
-    { id: 5, title: "five" }
+    { id: 1, title: "JavaScript", dot: 4, des: "ES6, TypeScript"},
+    { id: 2, title: "HTML / CSS", dot: 4, des: ""},
+    { id: 3, title: "Node.js", dot: 2, des: "Node.js"},
+    { id: 4, title: "PHP", dot: 3, des: "かつてよく書いた"},
+    { id: 5, title: "Java", dot: 2, des: "既存システムの保守に2年ほど従事"},
+    { id: 6, title: "Ruby", dot: 1, des: "機会があればちょこっと書く程度"},
+    { id: 7, title: "React + Redux", dot: 3, des: "Styled-component, Storybook"},
+    { id: 8, title: "CakePHP", dot: 2, des: ""},
+    { id: 9, title: "WordPress", dot: 3, des: "テーマ・プラグイン開発など"},
+    { id: 9, title: "Action Script", dot: 1, des: "数多くの実績を積みました"},
 ];
+
+
+
+
+
+
 
   const Tasks = ({ tasks }: {tasks: any}) => {
     const list = tasks.map((task: any) => {
-      return (
-        <li>
-          id is {task.id}, title is "{task.title}"
-        </li>
-      );
+        switch(task.dot){
+            case 1:
+            return (
+                <Tr>
+                <Td>{task.title}</Td>
+                <Td2><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot><SkillDotNot></SkillDotNot></Td2>
+                <Td3>{task.des}</Td3>
+                </Tr>
+            );
+        }
+        switch(task.dot){
+            case 2:
+            return (
+                <Tr>
+                <Td>{task.title}</Td>
+                <Td2><Dot2></Dot2></Td2>
+                <Td3>{task.des}</Td3>
+                </Tr>
+            );
+        }
+        switch(task.dot){
+            case 3:
+            return (
+                <Tr>
+                <Td>{task.title}</Td>
+                <Td2><Dot3></Dot3></Td2>
+                <Td3>{task.des}</Td3>
+                </Tr>
+            );
+        }
+        switch(task.dot){
+            case 4:
+            return (
+                <Tr>
+                <Td>{task.title}</Td>
+                <Td2><Dot4></Dot4></Td2>
+                <Td3>{task.des}</Td3>
+                </Tr>
+            );
+        }
+        switch(task.dot){
+            case 5:
+            return (
+                <Tr>
+                <Td>{task.title}</Td>
+                <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot></Td2>
+                <Td3>{task.des}</Td3>
+                </Tr>
+            );
+        }
+
     });
-    return <ul>{list}</ul>;
+    return <tbody>{list}</tbody>
   };
 
 export const Skill = () => {
@@ -35,58 +97,9 @@ export const Skill = () => {
                 <Title>SKILL</Title>
                 <LaySkill>
                     <Table>
-                        <tbody>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        <Tr>
-                            <Td>Javascript</Td>
-                            <Td2><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDot></SkillDot><SkillDotNot></SkillDotNot></Td2>
-                            <Td2>ES6, TypeScript </Td2>
-                        </Tr>
-                        </tbody>
+
+                            <Tasks tasks={tasks}></Tasks>
+
                     </Table>
                 </LaySkill>
             </Content>
@@ -125,7 +138,8 @@ const LaySkill = styled.div`
 `;
 
 const Table = styled.table`
-    width: 70%;
+    width: 90%;
+    margin-top: 2%;
     margin-left: 8%;
 `;
 
@@ -135,10 +149,15 @@ const Tr = styled.tr`
 
 const Td = styled.td`
 font-weight: 700;
+width: 5%;
 `;
 
 const Td2 = styled.td`
+width: 5%;
+`;
 
+const Td3 = styled.td`
+width: 10%;
 `;
 
 
