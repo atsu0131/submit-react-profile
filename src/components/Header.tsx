@@ -6,61 +6,61 @@ import "../Normalize.css"
 
 
 let name: string = "ATSUSHI ISAI"
+let comment: string = "バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。";
 
 const keyColor: string = 'white';
 
 
 export const Header = () => {
   return (
-    <>
-    <BackImage　id="top">
-      <Prof>
-        <LayProfImage>
-          <LayProfImageInline>
-          <ProfImage></ProfImage>
-          <ProfImageName>{name}</ProfImageName>
-          <ProfImageCarrer>Front Engineer</ProfImageCarrer>
-          </LayProfImageInline>
-          <ProfLine></ProfLine>
-        </LayProfImage>
-        <ProfDesc>
-            <Table>
-              <tbody>
-                  <ProfTr>
-                  <ProfTdAll colSpan={2}>バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの
-                  収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。</ProfTdAll>
-                  </ProfTr>
-                  <ProfTr>
-                    <ProfTdAll2 colSpan={2}>ISAI ATSUSHI</ProfTdAll2>
-                  </ProfTr>
-                  <ProfTr2>
-                    <ProfTdName>性別</ProfTdName>
-                    <ProfTdName2>男性</ProfTdName2>
-                  </ProfTr2>
-                  <ProfTr2>
-                    <ProfTdName>生年月日</ProfTdName>
-                    <ProfTdName2>1990/4/4</ProfTdName2>
-                  </ProfTr2>
-                  <ProfTr2>
-                    <ProfTdName>
-                      現住所
-                    </ProfTdName>
-                    <ProfTdName2>
-                      埼玉県和光市
-                    </ProfTdName2>
-                  </ProfTr2>
-              </tbody>
-            </Table>
-        </ProfDesc>
-      </Prof>
-      <Line></Line>
-    </BackImage>
-    </>
+  <>
+  <BackImage id="top">
+    <Prof>
+    <LayProfImage>
+      <LayProfImageInline>
+      <ProfImage></ProfImage>
+      <ProfImageName>{name}</ProfImageName>
+      <ProfImageCarrer>Front Engineer</ProfImageCarrer>
+      </LayProfImageInline>
+      <ProfLine></ProfLine>
+    </LayProfImage>
+    <ProfDesc>
+      <Table>
+        <tbody>
+          <ProfTr>
+            <ProfTdAll colSpan={2}>{comment}</ProfTdAll>
+            </ProfTr>
+          <ProfTr>
+          <ProfTdAll2 colSpan={2}>{name}</ProfTdAll2>
+          </ProfTr>
+          <ProfTr2>
+            <ProfTdName>性別</ProfTdName>
+            <ProfTdName2>男性</ProfTdName2>
+          </ProfTr2>
+          <ProfTr2>
+            <ProfTdName>生年月日</ProfTdName>
+            <ProfTdName2>1990/4/4</ProfTdName2>
+          </ProfTr2>
+          <ProfTr2>
+            <ProfTdName>
+              現住所
+            </ProfTdName>
+            <ProfTdName2>
+              埼玉県和光市
+            </ProfTdName2>
+          </ProfTr2>
+        </tbody>
+      </Table>
+    </ProfDesc>
+    </Prof>
+    <Line></Line>
+  </BackImage>
+  </>
   );
 };
 
 const Line = styled.div`
-  background-color:white;
+  background-color: white;
   position: absolute;
   top: 170px;
   left: 32%;
@@ -69,7 +69,7 @@ const Line = styled.div`
 `;
 
 const ProfLine = styled.div`
-  background-color:white;
+  background-color: white;
   position: absolute;
   top: 170px;
   left: 10%;
@@ -143,17 +143,6 @@ const ProfTr2 = styled.tr`
   line-height: 15px;
   width: 100%;
 `;
-
-// const ProfTd = styled.td`
-//   width: 50%;
-//   height: 50px;
-//   color: ${keyColor};
-// `;
-// const ProfTd2 = styled.td`
-//   width: 50%;
-//   height: 50px;
-//   color: ${keyColor};
-// `;
 
 const ProfTdName = styled.td`
   width: 20%;
