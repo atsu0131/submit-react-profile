@@ -2,11 +2,17 @@
 import styled from 'styled-components';
 import img from '../img/bg.png';
 import profileImg from '../img/title.png';
-import "../Normalize.css"
 
 
 let name: string = "ATSUSHI ISAI"
 let comment: string = "バックエンドからフロントエンドまで、さまざまな技術を駆使して実装するのが好き。Webサービスの収益向上のためにさらに技術を磨いていきたい。バックエンドはPHPやRuby、フロントエンドはVue.jsやReactを使います。";
+let career: string = "Front Engineer"
+let gendar_title: string = "性別"
+let gendar: string = "男性"
+let birth_title: string = "生年月日"
+let birth_day: string = "1990/4/4"
+let address_title: string = "現住所"
+let address: string = "埼玉県和光市"
 
 const keyColor: string = 'white';
 
@@ -20,7 +26,7 @@ export const Header = () => {
       <LayProfImageInline>
       <ProfImage></ProfImage>
       <ProfImageName>{name}</ProfImageName>
-      <ProfImageCarrer>Front Engineer</ProfImageCarrer>
+      <ProfImageCarrer>{career}</ProfImageCarrer>
       </LayProfImageInline>
       <ProfLine></ProfLine>
     </LayProfImage>
@@ -34,19 +40,19 @@ export const Header = () => {
           <ProfTdAll2 colSpan={2}>{name}</ProfTdAll2>
           </ProfTr>
           <ProfTr2>
-            <ProfTdName>性別</ProfTdName>
-            <ProfTdName2>男性</ProfTdName2>
+            <ProfTdName>{gendar_title}</ProfTdName>
+            <ProfTdName2>{gendar}</ProfTdName2>
           </ProfTr2>
           <ProfTr2>
-            <ProfTdName>生年月日</ProfTdName>
-            <ProfTdName2>1990/4/4</ProfTdName2>
+            <ProfTdName>{birth_title}</ProfTdName>
+            <ProfTdName2>{birth_day}</ProfTdName2>
           </ProfTr2>
           <ProfTr2>
             <ProfTdName>
-              現住所
+              {address_title}
             </ProfTdName>
             <ProfTdName2>
-              埼玉県和光市
+              {address}
             </ProfTdName2>
           </ProfTr2>
         </tbody>
